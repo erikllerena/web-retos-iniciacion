@@ -1,0 +1,153 @@
+:root{
+    --text-color1:#007bff;
+    --text-color2:#000000;
+    --text-color3:#333333;
+    --text-color4:#ffffff;
+    --text-color5:#222222;
+    --icon-color:#559ff0;
+    --shadowbox:0 2px 6px rgba(0,0,0,0.5);
+    --container-color1:#007bff;
+    --container-color2:#28a745;
+    --container-color3:#ffc107;
+    --container-color4:#dc3545;
+    --background1:#f0f2f5;
+    --background2:#ffffff;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--background1);
+    gap: 40px;
+    padding: 40px;
+}
+h1{
+    color: var(--text-color1);
+    margin-top: 40;
+}
+header{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: var(--shadowbox);
+}
+main{
+    text-align: justify;
+}
+.tittle{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-color2);
+}
+.icon{
+    color: var(--icon-color);
+}
+p{
+    color: var(--text-color3);
+}
+span{
+    font-weight: 800;
+}
+section{
+    max-width: 900px;
+    height: 320px;
+    background: var(--background2);
+    border-radius: 10px;
+    box-shadow: var(--shadowbox);
+    padding: 15px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.scroll h3{
+    color: var(--text-color4);
+}
+#case1{
+    display: flex;
+    flex-direction: column;
+}
+#case1 .scroll{
+    border: solid 2px var(--container-color1);
+    padding: 10px;
+    overflow-y: scroll;
+}
+#case1 header{
+    background-color: var(--container-color1);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+#case1 main{
+    padding: 10px;
+}
+#case2 .scroll{
+    border: solid 2px var(--container-color2);
+    padding: 10px;
+    overflow-x: auto;
+    max-width: 100%;
+}
+#case2 header{
+    background-color: var(--container-color2);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+#case2 main{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-top: 10px;
+
+}
+.caja{
+    padding: 50px;
+    background-color: var(--background1);
+    border-radius: 10px;
+    font-weight: bold;
+    color: var(--text-color3);
+}
+footer{
+    margin-top: 10px;
+}
+#case3{
+    display: flex;
+    flex-direction: column;
+}
+#case3 header{
+    background-color: var(--container-color3);
+    position: sticky;
+    top: 0;
+}
+#case3 .scroll{
+    border: solid 2px var(--container-color3);
+    padding: 10px;
+    overflow-y: scroll;
+}
+#case4 {
+    display: flex;
+    flex-direction: column;
+}
+#case4 .scroll{
+    border: solid 2px var(--container-color3);
+    padding: 10px;
+    overflow-y: scroll;
+}
+#case4 header{
+    background-color: var(--container-color4);
+    position: sticky;
+    top: 0;
+}
+#case4 main header{
+    background-color: var(--container-color2);
+    position: sticky;
+    top: 50px;
+}
+
