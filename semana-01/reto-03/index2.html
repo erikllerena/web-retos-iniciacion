@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <title>Reto 3.1</title>
+</head>
+<body>
+    <h1>Ejemplos de Sticky con Scroll Interno</h1>
+    <section id="case1">
+        <div class="tittle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="currentColor" class="icon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.333 2c1.96 0 3.56 1.537 3.662 3.472l.005 .195v12.666c0 1.96 -1.537 3.56 -3.472 3.662l-.195 .005h-12.666a3.667 3.667 0 0 1 -3.662 -3.472l-.005 -.195v-12.666c0 -1.96 1.537 -3.56 3.472 -3.662l.195 -.005h12.666zm-5.339 5.886c-.083 -.777 -1.008 -1.16 -1.617 -.67l-.084 .077l-2 2l-.083 .094a1 1 0 0 0 0 1.226l.083 .094l.094 .083a1 1 0 0 0 1.226 0l.094 -.083l.293 -.293v5.586l.007 .117a1 1 0 0 0 1.986 0l.007 -.117v-8l-.006 -.114z" /></svg>
+                <h2>Sticky dentro de un contenedor con <span>scroll vertical</span></h2>
+        </div>
+        <div class="scroll">
+            <header>
+                <h3>Encabezado Pegajoso (Scroll Interno)</h3>
+            </header>
+            <main>
+                <p>Este encabezado se mantiene visible solo mientras el contenedor azul tiene scroll. Si haces scroll dentro de esta caja, verás que se queda pegado arriba del área visible del contenedor. Sin embargo, si haces scroll en el documento general, este sticky no se mueve porque está limitado a su contenedor.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis purus nec diam finibus, nec accumsan libero placerat.</p>
+                <br>
+                <p>Praesent ut orci a lorem viverra dapibus. Aenean sit amet luctus sem, at dignissim orci.</p>
+                <br>
+                <p>Curabitur id tincidunt turpis. Pellentesque at eros non ante gravida faucibus.</p>
+            </main>
+        </div>   
+    </section>
+    <section id="case2">
+        <div class="tittle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="currentColor" class="icon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.333 2c1.96 0 3.56 1.537 3.662 3.472l.005 .195v12.666c0 1.96 -1.537 3.56 -3.472 3.662l-.195 .005h-12.666a3.667 3.667 0 0 1 -3.662 -3.472l-.005 -.195v-12.666c0 -1.96 1.537 -3.56 3.472 -3.662l.195 -.005h12.666zm-5.333 5h-3l-.117 .007a1 1 0 0 0 0 1.986l.117 .007h3v2h-2l-.15 .005a2 2 0 0 0 -1.844 1.838l-.006 .157v2l.005 .15a2 2 0 0 0 1.838 1.844l.157 .006h3l.117 -.007a1 1 0 0 0 0 -1.986l-.117 -.007h-3v-2h2l.15 -.005a2 2 0 0 0 1.844 -1.838l.006 -.157v-2l-.005 -.15a2 2 0 0 0 -1.838 -1.844l-.157 -.006z" /></svg>
+                <h2>Sticky dentro de un contenedor con <span>scroll horizontal</span></h2>
+        </div>
+        <div class="scroll">
+            <header>
+                <h3>Encabezado Pegajoso Izquierdo</h3>
+            </header>
+            <main>
+                <div class="caja">Caja1</div>
+                <div class="caja">Caja2</div>
+                <div class="caja">Caja3</div>
+                <div class="caja">Caja4</div>
+                <div class="caja">Caja5</div>
+                <div class="caja">Caja6</div>
+                <div class="caja">Caja7</div>
+            </main>
+        </div>   
+            <footer>
+                <p>El sticky verde tiene left: 0 y se queda fijo en el borde izquierdo del contenedor mientras haces scroll horizontal.</p>
+            </footer>
+    </section>
+    <section id="case3">
+        <div class="tittle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="currentColor" class="icon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.333 2c1.96 0 3.56 1.537 3.662 3.472l.005 .195v12.666c0 1.96 -1.537 3.56 -3.472 3.662l-.195 .005h-12.666a3.667 3.667 0 0 1 -3.662 -3.472l-.005 -.195v-12.666c0 -1.96 1.537 -3.56 3.472 -3.662l.195 -.005h12.666zm-5.333 5h-2l-.15 .005a2 2 0 0 0 -1.85 1.995a1 1 0 0 0 1.974 .23l.02 -.113l.006 -.117h2v2h-2l-.133 .007c-1.111 .12 -1.154 1.73 -.128 1.965l.128 .021l.133 .007h2v2h-2l-.007 -.117a1 1 0 0 0 -1.993 .117a2 2 0 0 0 1.85 1.995l.15 .005h2l.15 -.005a2 2 0 0 0 1.844 -1.838l.006 -.157v-2l-.005 -.15a1.988 1.988 0 0 0 -.17 -.667l-.075 -.152l-.019 -.032l.02 -.03a2.01 2.01 0 0 0 .242 -.795l.007 -.174v-2l-.005 -.15a2 2 0 0 0 -1.838 -1.844l-.157 -.006z" /></svg>
+                <h2>Sticky combinado con <span>scroll vertical + cabecera principal</span></h2>
+        </div>
+        <div class="scroll">
+            <header>
+                <h3>Encabezado Interno Naranja</h3>
+            </header>
+            <main>
+                <p>Este bloque naranja es sticky dentro de un contenedor con scroll interno. Solo se moverá cuando el scroll ocurra dentro de este div.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet.</p>
+                <br>
+                <p>Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.</p>
+                <br>
+                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis risus.</p>
+                <br>
+                <p>Praesent dapibus. Duis at velit eu est congue elementum. Mauris rutrum, lorem id varius.</p>
+            </main>
+        </div>   
+    </section>
+    <section id="case4">
+        <div class="tittle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="currentColor" class="icon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.333 2c1.96 0 3.56 1.537 3.662 3.472l.005 .195v12.666c0 1.96 -1.537 3.56 -3.472 3.662l-.195 .005h-12.666a3.667 3.667 0 0 1 -3.662 -3.472l-.005 -.195v-12.666c0 -1.96 1.537 -3.56 3.472 -3.662l.195 -.005h12.666zm-4.333 5a1 1 0 0 0 -.993 .883l-.007 .117v3h-2v-3l-.007 -.117a1 1 0 0 0 -1.986 0l-.007 .117v3l.005 .15a2 2 0 0 0 1.838 1.844l.157 .006h2v3l.007 .117a1 1 0 0 0 1.986 0l.007 -.117v-8l-.007 -.117a1 1 0 0 0 -.993 -.883z" /></svg>
+                <h2>Sticky múltiple dentro de un scroll</h2>
+        </div>
+        <div class="scroll">
+            <header>
+                <h3>Encabezado Rojo</h3>
+            </header>
+            <main>
+                <p>
+                    Este encabezado rojo se mantiene visible mientras el bloque está dentro de la vista.
+                </p>
+                <div>
+                    <header>
+                    <h3>
+                        Sticky verde debajo (top:50px)
+                    </h3>
+                    </header>
+                    <p>Fíjate cómo ambos sticky conviven dentro del mismo scroll interno, y el verde respeta su offset de 50px.</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Duis semper, arcu massa.</p>
+                    <br>
+                    <p>Donec euismod, sapien eget facilisis congue, eros arcu lacinia nunc.</p>
+                    <br>
+                    <p>Curabitur non orci eu augue luctus fermentum. Nam aliquet cursus mi.</p>
+                </div>
+            </main>
+        </div>   
+    </section>
+</body>
+</html>
